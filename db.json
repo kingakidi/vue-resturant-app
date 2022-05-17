@@ -1,8 +1,52 @@
 {
-    "resturants": [
-      { "id": 1, "name": "Disney Chicken", "email": "disneychicken@gmail.com", "password": "12345" }
-    ],
-    "users": [
-        { "id": 1, "name": "Aka'aba Musa AKidi", "email": "akaabamusa@gmail.com", "password": "12345" }
-      ]
-  }
+  "users": [
+    {
+      "id": 1,
+      "name": "Aka'aba Musa AKidi",
+      "email": "akaabamusa@gmail.com",
+      "password": "12345"
+    },
+    {
+      "name": "King's Resturant",
+      "email": "kingakidi@gmail.com",
+      "password": "898998",
+      "id": 2
+    },
+    {
+      "name": "King's mEN",
+      "email": "KIDK@GKA.COM",
+      "password": "KDKLD",
+      "id": 3
+    },
+    {
+      "name": "kdkkdk",
+      "email": "kddkdk@gmail.com",
+      "password": "kdkkd",
+      "id": 4
+    },
+    {
+      "name": "kingakidi",
+      "email": "kkdkkd@gmail.com",
+      "password": "kkdd",
+      "id": 5
+    },
+    {
+      "name": "king akidi",
+      "email": "kingakai@gmal.com",
+      "password": "89KKDJ88idk8j",
+      "id": 6
+    },
+    {
+      "name": "aka'aba musa akidi",
+      "email": "kdikdidk@gmaki.com",
+      "password": "kkddkkdk",
+      "id": 7
+    },
+    {
+      "name": "kdkkd",
+      "email": "kkdkd@gmail.com",
+      "password": "kdkkdk",
+      "id": 8
+    }
+  ]
+}
