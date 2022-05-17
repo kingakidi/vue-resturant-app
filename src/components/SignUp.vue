@@ -53,6 +53,7 @@ export default {
           this.resturantEmail = "";
           this.resturantPassword = "";
           localStorage.setItem("restoUsers", JSON.stringify(register.data));
+          // vue.redirect("/Login");
         } else {
           this.error = register.statusText;
         }
