@@ -53,7 +53,7 @@ export default {
           this.resturantEmail = "";
           this.resturantPassword = "";
           localStorage.setItem("restoUsers", JSON.stringify(register.data));
-          // vue.redirect("/Login");
+          this.$router.push({ name: "HomeComponent" });
         } else {
           this.error = register.statusText;
         }
@@ -61,6 +61,12 @@ export default {
         this.error = "All fields required";
       }
     },
+  },
+  mounted() {
+    let loginData = localStorage.getItem("restoUsers");
+    if (loginData) {
+      this.$router.push({ name: "HomeComponent" });
+    }
   },
 };
 </script>
