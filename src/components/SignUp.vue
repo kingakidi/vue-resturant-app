@@ -6,6 +6,7 @@
      <input type="email"  v-model="resturantEmail" placeholder="Enter Email Address">
      <input type="password" v-model="resturantPassword" placeholder="Enter Password">
      <input type="submit" value="Register Resturant" >
+     <div> {{error}}</div>
     </form>
   </div>
 </template>
@@ -14,15 +15,25 @@
     name: "SignUp", 
     data(){
       return {
-        fullname: "", 
-        email: "", 
-        password: ""
+        resturantName: "", 
+        resturantEmail: "", 
+        resturantPassword: "", 
+        error: ""
       }
     }, 
    methods: {
+     clean(val){
+       return val.length
+     },
      signup(){
-       console.log("YOu have signup")
-       alert("You clicked on signup")
+    
+     if ( this.clean(this.resturantName) && this.clean(this.resturantPassword) > 0 && this.clean(this.resturantPassword)) {
+        // console.log(this.resturantName.length, this.resturantEmail, this.resturantPassword)
+        console.log()
+        this.error = "Loading..."
+     }else{
+       this.error = "All fields required"
+     }
      }
    }
 

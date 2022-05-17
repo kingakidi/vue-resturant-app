@@ -1,0 +1,8 @@
+{
+    "resturants": [
+      { "id": 1, "name": "Disney Chicken", "email": "disneychicken@gmail.com", "password": "12345" }
+    ],
+    "users": [
+        { "id": 1, "name": "Aka'aba Musa AKidi", "email": "akaabamusa@gmail.com", "password": "12345" }
+      ]
+  }
