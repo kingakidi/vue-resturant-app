@@ -9,10 +9,10 @@
       >
         <ol>
           <li>
-            <strong>{{ resturant.name }}</strong>
+            <strong>{{ resturant.name.toUpperCase() }}</strong>
           </li>
-          <li>{{ resturant.address }}</li>
-          <li>{{ resturant.menu }}</li>
+          <li>Address: {{ capitalizeFirstLetters(resturant.address) }}</li>
+          <li>Menu: {{ capitalizeFirstLetters(resturant.menu) }}</li>
         </ol>
 
         <div><button>Update</button><button>Delete</button></div>
@@ -34,7 +34,15 @@ export default {
       resturants: [],
     };
   },
+  methods: {
+    capitalizeFirstLetters(str) {
+      let text = str
+        .toLowerCase()
+        .replace(/(^\w{1})|(\s{1}\w{1})/g, (match) => match.toUpperCase());
 
+      return text;
+    },
+  },
   mounted() {
     let loginData = localStorage.getItem("restoUsers");
     if (!loginData) {

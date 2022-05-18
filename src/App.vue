@@ -25,13 +25,15 @@ export default {
   align-items: center;
 }
 .signup,
-.login {
+.login,
+.add-resturant {
   width: 350px;
   padding: 20px;
   /* background-color: #eee; */
 }
 .signup input,
-.login input {
+.login input,
+.add-resturant input {
   display: block;
   margin-bottom: 10px;
   width: 350px;
@@ -41,13 +43,15 @@ export default {
 }
 
 .signup input:focus,
-.login input:focus {
+.login input:focus,
+.add-resturant input:focus {
   outline: 1px rgba(0, 0, 0, 0.39);
   padding: 13px;
 }
 
 .signup input[type="submit"],
-.login input[type="submit"] {
+.login input[type="submit"],
+.add-resturant input[type="submit"] {
   background: rgb(9, 238, 226);
   border: solid rgba(0, 0, 0, 0.39) 1px;
 }

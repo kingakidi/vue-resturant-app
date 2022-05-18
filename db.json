@@ -121,6 +121,18 @@
       "name": "Chicken Republic",
       "address": "No 20, Barnawa, Kaduna",
       "menu": "Chicken, Shawarma, etc"
+    },
+    {
+      "name": "king ",
+      "address": "king avenue",
+      "menu": "king, sweet",
+      "id": 3
+    },
+    {
+      "name": "fresh and tasty",
+      "address": "ali's close, lokoja",
+      "menu": "eba, akpu, rice",
+      "id": 4
     }
   ]
 }
