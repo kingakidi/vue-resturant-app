@@ -3,7 +3,7 @@
     <HeaderComponent />
     <h1>Update Resturant</h1>
     <div class="form-container">
-      <form class="add-resturant">
+      <form class="add-resturant" @submit.prevent="updateResturant()">
         <input type="text" v-model="name" placeholder="Resturant Name" />
         <input type="text" v-model="address" placeholder="Resturant Address " />
 
@@ -12,7 +12,7 @@
           v-model="menu"
           placeholder="List Menu seperate with comma"
         />
-        <input type="submit" value="Add Resturant" />
+        <input type="submit" value="Update Resturant" />
         <div>{{ error }}</div>
       </form>
     </div>
@@ -20,9 +20,13 @@
 </template>
 
 <script>
+import HeaderComponent from "./HeaderComponent.vue";
 import axios from "axios";
 export default {
   name: "UpdateResturant",
+  components: {
+    HeaderComponent,
+  },
   data() {
     return {
       updateId: this.$route.params.id,
@@ -31,6 +35,36 @@ export default {
       menu: "",
       error: "",
     };
+  },
+  methods: {
+    clean($val) {
+      return $val.length;
+    },
+    async updateResturant() {
+      if (
+        this.clean(this.name) > 0 &&
+        this.clean(this.address) > 0 &&
+        this.clean(this.menu) > 0
+      ) {
+        this.error = "Loading...";
+        let postResturant = await axios.post(
+          "http://localhost:3000/resturants",
+          {
+            name: this.name.toLowerCase(),
+            address: this.address.toLowerCase(),
+            menu: this.menu.toLowerCase(),
+          }
+        );
+        if (postResturant.status === 201) {
+          this.error = "Updated Successfully";
+          this.name = "";
+          this.address = "";
+          this.menu = "";
+        }
+      } else {
+        this.error = "All fields required";
+      }
+    },
   },
   mounted() {
     // GET THE RESTURANTS WITH THE PASSED IN ID

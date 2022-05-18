@@ -133,6 +133,18 @@
       "address": "ali's close, lokoja",
       "menu": "eba, akpu, rice",
       "id": 4
+    },
+    {
+      "name": "king ",
+      "address": "king avenue",
+      "menu": "king, sweet",
+      "id": 5
+    },
+    {
+      "name": "king resturant",
+      "address": "king avenue",
+      "menu": "kaduna",
+      "id": 6
     }
   ]
 }
