@@ -26,8 +26,8 @@
     },
     {
       "name": "kingakidi",
-      "email": "kkdkkd@gmail.com",
-      "password": "kkdd",
+      "email": "king@gmail.com",
+      "password": "12345",
       "id": 5
     },
     {
@@ -101,6 +101,12 @@
       "email": "dkdikd@l.c",
       "password": " ",
       "id": 17
+    },
+    {
+      "name": "kakdkjk",
+      "email": "kdkjdkj@g.com",
+      "password": "kjdkjkjd",
+      "id": 18
     }
   ]
 }

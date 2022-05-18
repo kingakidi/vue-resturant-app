@@ -11,7 +11,7 @@ export default {
   mounted() {
     let loginData = localStorage.getItem("restoUsers");
     if (!loginData) {
-      this.$router.push({ name: "SignUp" });
+      this.$router.push({ name: "LogIn" });
     }
   },
 };

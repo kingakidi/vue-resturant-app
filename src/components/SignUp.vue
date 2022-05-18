@@ -14,6 +14,10 @@
         placeholder="Enter Password"
       />
       <input type="submit" value="Register Resturant" />
+      <div>
+        Already have an account?
+        <router-link to="/login"> Login </router-link>
+      </div>
       <div>{{ error }}</div>
     </form>
   </div>
@@ -64,6 +68,7 @@ export default {
   },
   mounted() {
     let loginData = localStorage.getItem("restoUsers");
+
     if (loginData) {
       this.$router.push({ name: "HomeComponent" });
     }

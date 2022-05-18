@@ -6,8 +6,8 @@
 export default {
   name: "LogOut",
   mounted() {
-    // localStorage.removeItem("restoUser");
-    // this.$router.push({ name: "HomeComponent" });
+    const store = localStorage.removeItem("restoUsers");
+    this.$router.push({ name: "LogIn" });
   },
 };
 </script>
