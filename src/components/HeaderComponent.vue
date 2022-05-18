@@ -2,8 +2,8 @@
   <div class="nav">
     <router-link to="/">Home</router-link>
     <router-link to="/add">Add Resturant</router-link>
-    <router-link to="/update">Update Resturant</router-link>
-    <router-link to="/delete">Delete Resturant</router-link>
+    <!-- <router-link to="/update">Update Resturant</router-link> -->
+    <!-- <router-link to="/delete">Delete Resturant</router-link> -->
     <router-link to="/logout">Logout</router-link>
   </div>
 </template>

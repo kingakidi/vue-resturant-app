@@ -13,7 +13,7 @@ const routes = [
   { name: "LogIn", component: LogIn, path: "/login" },
   { name: "AddResturant", component: AddResturant, path: "/add" },
 
-  { name: "UpdateResturant", component: UpdateResturant, path: "/update" },
+  { name: "UpdateResturant", component: UpdateResturant, path: "/update/:id" },
 
   { name: "LogOut", component: LogOut, path: "/logout" },
 ];

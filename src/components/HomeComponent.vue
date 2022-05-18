@@ -7,15 +7,9 @@
         v-for="resturant in resturants"
         :key="resturant.id"
       >
-        <ol>
-          <li>
-            <strong>{{ resturant.name.toUpperCase() }}</strong>
-          </li>
-          <li>Address: {{ capitalizeFirstLetters(resturant.address) }}</li>
-          <li>Menu: {{ capitalizeFirstLetters(resturant.menu) }}</li>
-        </ol>
-
-        <div><button>Update</button><button>Delete</button></div>
+        {{ resturant }}
+        {{ updatePath(resturant.id) }}
+        <router-link :to="updatePath(resturant.id)">Update</router-link>
       </div>
     </div>
   </div>
@@ -35,6 +29,9 @@ export default {
     };
   },
   methods: {
+    updatePath(id) {
+      return `/update/${id}`;
+    },
     capitalizeFirstLetters(str) {
       let text = str
         .toLowerCase()
@@ -51,7 +48,7 @@ export default {
 
     axios.get("http://localhost:3000/resturants").then((res) => {
       this.resturants = res.data;
-      console.log(this.resturants);
+      console.log(2);
     });
   },
 };
