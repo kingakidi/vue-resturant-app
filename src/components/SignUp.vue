@@ -46,7 +46,7 @@ export default {
           email: this.resturantEmail.toLowerCase(),
           password: this.resturantPassword,
         });
-        console.log(register);
+
         if (register.status === 201) {
           this.error = "Account Created Successfully";
           this.resturantName = "";
@@ -70,34 +70,4 @@ export default {
   },
 };
 </script>
-<style>
-div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.signup {
-  width: 350px;
-  padding: 20px;
-  /* background-color: #eee; */
-}
-.signup input {
-  display: block;
-  margin-bottom: 10px;
-  width: 350px;
-
-  padding: 10px;
-  box-sizing: border-box;
-}
-
-.signup input:focus {
-  outline: 1px rgba(0, 0, 0, 0.39);
-  padding: 13px;
-}
-
-.signup input[type="submit"] {
-  background: rgb(9, 238, 226);
-  border: solid rgba(0, 0, 0, 0.39) 1px;
-}
-</style>
+<style></style>
