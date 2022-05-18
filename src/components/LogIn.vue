@@ -1,15 +1,17 @@
 <template>
-  <h1>Login</h1>
-  <form action="" class="login" @submit.prevent="login()">
-    <input type="email" v-model="email" placeholder="Enter Email Address" />
-    <input type="password" v-model="password" placeholder="Enter Password" />
-    <input type="submit" value="Login" />
-    <div>
-      Don't have an account?
-      <router-link to="/signup"> Create account </router-link>
-    </div>
-    <div>{{ error }}</div>
-  </form>
+  <div class="form-container">
+    <h1>Login</h1>
+    <form action="" class="login" @submit.prevent="login()">
+      <input type="email" v-model="email" placeholder="Enter Email Address" />
+      <input type="password" v-model="password" placeholder="Enter Password" />
+      <input type="submit" value="Login" />
+      <div>
+        Don't have an account?
+        <router-link to="/signup"> Create account </router-link>
+      </div>
+      <div>{{ error }}</div>
+    </form>
+  </div>
 </template>
 
 <script>
