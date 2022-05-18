@@ -108,5 +108,19 @@
       "password": "kjdkjkjd",
       "id": 18
     }
+  ],
+  "resturants": [
+    {
+      "id": 1,
+      "name": "Disney",
+      "address": "No 5, Ahmadu Bello Ways, Kaduna",
+      "menu": "Rice, Indomie, etc"
+    },
+    {
+      "id": 2,
+      "name": "Chicken Republic",
+      "address": "No 20, Barnawa, Kaduna",
+      "menu": "Chicken, Shawarma, etc"
+    }
   ]
 }

@@ -1,6 +1,23 @@
 <template>
   <div class="home">
     <HeaderComponent />
+    <div class="resturant-list">
+      <div
+        class="single-resturant"
+        v-for="resturant in resturants"
+        :key="resturant.id"
+      >
+        <ol>
+          <li>
+            <strong>{{ resturant.name }}</strong>
+          </li>
+          <li>{{ resturant.address }}</li>
+          <li>{{ resturant.menu }}</li>
+        </ol>
+
+        <div><button>Update</button><button>Delete</button></div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -24,11 +41,52 @@ export default {
       this.$router.push({ name: "LogIn" });
     }
 
-    axios.get("http://localhost:3000/users").then((res) => {
+    axios.get("http://localhost:3000/resturants").then((res) => {
       this.resturants = res.data;
+      console.log(this.resturants);
     });
   },
 };
 </script>
 
-<style></style>
+<style>
+.resturant-list {
+  margin-top: 20px;
+  display: flex;
+  margin: 10px;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  text-align: justify;
+}
+
+.single-resturant {
+  background: #0e2134;
+  color: #fff;
+  list-style: none;
+  margin: 20px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 20px;
+}
+.resturant-list ol {
+  list-style: none;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-inline-start: 0px;
+}
+.resturant-list ol li {
+  margin: 8px 0px;
+}
+
+.resturant-list ol div {
+  background: #e4a3ff;
+}
+.single-resturant button {
+  display: inline-block;
+  padding: 10px;
+  margin: 5px 0px;
+  margin-right: 8px;
+}
+</style>

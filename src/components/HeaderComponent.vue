@@ -24,15 +24,24 @@ body {
 .nav {
   background: #0e2134;
   width: 100%;
-  padding: 15px;
+
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  box-sizing: border-box;
 }
+
 .router-link,
 a {
   display: block;
   text-decoration: none;
   color: #fff;
+  height: 100%;
+  padding: 10px;
+  border-radius: 3px;
+}
+a:hover {
+  background-color: #fff;
+  color: rgb(32, 30, 30);
 }
 </style>
