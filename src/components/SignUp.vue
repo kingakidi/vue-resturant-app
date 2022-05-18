@@ -70,7 +70,7 @@ export default {
   },
 };
 </script>
-<style scoped>
+<style>
 div {
   display: flex;
   flex-direction: column;
@@ -80,7 +80,7 @@ div {
 .signup {
   width: 350px;
   padding: 20px;
-  background-color: #eee;
+  /* background-color: #eee; */
 }
 .signup input {
   display: block;
@@ -94,5 +94,10 @@ div {
 .signup input:focus {
   outline: 1px rgba(0, 0, 0, 0.39);
   padding: 13px;
+}
+
+.signup input[type="submit"] {
+  background: rgb(9, 238, 226);
+  border: solid rgba(0, 0, 0, 0.39) 1px;
 }
 </style>
