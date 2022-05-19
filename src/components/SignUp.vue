@@ -45,7 +45,7 @@ export default {
         this.clean(this.resturantPassword)
       ) {
         this.error = "Loading...";
-        let register = await axios.post("http://localhost:3000/users", {
+        let register = await axios.post("s", {
           name: this.resturantName.toLowerCase(),
           email: this.resturantEmail.toLowerCase(),
           password: this.resturantPassword,
