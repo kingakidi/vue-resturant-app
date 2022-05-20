@@ -56,7 +56,48 @@ export default {
   border: solid rgba(0, 0, 0, 0.39) 1px;
 }
 
-/* POP STYLING  */
+/* HOME COMPONENT STYLING  */
+
+.resturant-list {
+  margin-top: 20px;
+  display: flex;
+  margin: 10px;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  text-align: justify;
+}
+
+.single-resturant {
+  background: #0e2134;
+  color: #fff;
+  list-style: none;
+  margin: 20px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 20px;
+}
+.resturant-list ol {
+  list-style: none;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-inline-start: 0px;
+}
+.resturant-list ol li {
+  margin: 8px 0px;
+}
+
+.resturant-list ol div {
+  background: #e4a3ff;
+}
+.single-resturant button {
+  display: inline-block;
+  padding: 10px;
+  margin: 5px 0px;
+  margin-right: 8px;
+}
+/* POPUp  STYLING  */
 .popup-page {
   position: fixed;
   z-index: 20;
@@ -64,8 +105,8 @@ export default {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: rgba(0, 0, 0, 0.25);
-  display: none;
+  background-color: #000000f0;
+  /* display: none; */
 }
 
 .popup-content {
@@ -76,6 +117,7 @@ export default {
   transform: translate(-50%, -50%);
   background-color: #fff;
   background: #0e2134;
+  color: #fff;
 
   /* padding: 20px; */
   /* height: 90%; */

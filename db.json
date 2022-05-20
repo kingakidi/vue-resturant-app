@@ -111,16 +111,16 @@
   ],
   "resturants": [
     {
-      "id": 1,
-      "name": "Disney",
-      "address": "No 5, Ahmadu Bello Ways, Kaduna",
-      "menu": "Rice, Indomie, etc"
+      "name": "disney chicken",
+      "address": "no 5, ahmadu bello ways, kaduna",
+      "menu": "rice, indomie, etc",
+      "id": 1
     },
     {
-      "id": 2,
-      "name": "Chicken Republic",
-      "address": "No 20, Barnawa, Kaduna",
-      "menu": "Chicken, Shawarma, etc"
+      "name": "chicken republic",
+      "address": "no 20, barnawa, kaduna",
+      "menu": "chicken, shawarma, etc",
+      "id": 2
     },
     {
       "name": "king ",
@@ -145,6 +145,36 @@
       "address": "king avenue",
       "menu": "kaduna",
       "id": 6
+    },
+    {
+      "name": "king ",
+      "address": "king avenue",
+      "menu": "king, sweet",
+      "id": 7
+    },
+    {
+      "name": "kano sydee kitchen",
+      "address": "no 1, sydee road, kano",
+      "menu": "wholesales supplier",
+      "id": 8
+    },
+    {
+      "name": "dis",
+      "address": "no 5, ahmadu bello ways, kaduna",
+      "menu": "rice, indomie, etc",
+      "id": 9
+    },
+    {
+      "name": "chicken",
+      "address": "no 20, barnawa, kaduna",
+      "menu": "chicken, shawarma, etc",
+      "id": 10
+    },
+    {
+      "name": "disney",
+      "address": "no 5, ahmadu bello ways, kaduna",
+      "menu": "rice, indomie, etc",
+      "id": 11
     }
   ]
 }

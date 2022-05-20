@@ -47,19 +47,22 @@ export default {
         this.clean(this.menu) > 0
       ) {
         this.error = "Loading...";
-        let postResturant = await axios.post(
-          "http://localhost:3000/resturants",
+        let postResturant = await axios.put(
+          `http://localhost:3000/resturants/${this.$route.params.id}`,
           {
             name: this.name.toLowerCase(),
             address: this.address.toLowerCase(),
             menu: this.menu.toLowerCase(),
           }
         );
-        if (postResturant.status === 201) {
+        if (postResturant.status === 200) {
+          let updatedData = postResturant.data;
           this.error = "Updated Successfully";
-          this.name = "";
-          this.address = "";
-          this.menu = "";
+          this.name = updatedData.name;
+          this.address = updatedData.address;
+          this.menu = updatedData.menu;
+        } else {
+          console.log(postResturant);
         }
       } else {
         this.error = "All fields required";
