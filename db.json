@@ -175,6 +175,12 @@
       "address": "no 5, ahmadu bello ways, kaduna",
       "menu": "rice, indomie, etc",
       "id": 11
+    },
+    {
+      "name": "uncle tee",
+      "address": "abu zaria",
+      "menu": "rice and chicken",
+      "id": 12
     }
   ]
 }
